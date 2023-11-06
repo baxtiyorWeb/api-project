@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.send("your home page");
 });
 
-// app get
+// app get func
 
 app.get("/products", async (req, res) => {
   try {
