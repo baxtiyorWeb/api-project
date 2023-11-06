@@ -74,7 +74,7 @@ app.delete("/products/:id", async (req, res, next) => {
   }
 });
  
-// app post
+// app post app
 
 app.post("/products", async (req, res) => {
   try {
