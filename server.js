@@ -95,16 +95,19 @@ app.post("/products", async (req, res) => {
 
 mongoose.set("strictQuery", false);
 
+
+const PORT = 3000
+
 mongoose
   .connect(
     "mongodb+srv://baxtiyor:baxtiyor060708@cluster0.pwwfnzj.mongodb.net/Surxan-Api?retryWrites=true&w=majority"
   )
   .then(() => {
     console.log("connected Mongodb");
-    app.listen(3000, (req, res) => {
-      console.log("Surxan-Bazar-listening port");
+    app.listen(PORT, (req, res) => {
+      console.log("Surxan-Bazar-listening port: " + PORT);
     });
   })
-  .catch(() => {
+  .catch((error) => {
     console.log(error);
   });
