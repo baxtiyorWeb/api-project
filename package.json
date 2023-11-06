@@ -1,9 +1,6 @@
 {
   "name": "surxon-bazar-api",
   "version": "1.0.0",
-  "engines": {
-    "node": ">=19 <20"
-  },
   "description": "api app",
   "main": "server.js",
   "scripts": {
