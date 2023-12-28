@@ -73,7 +73,7 @@ app.delete("/products/:id", async (req, res, next) => {
     res.status(500).json({ message: error.message });
   }
 });
- 
+
 // app post app
 
 app.post("/products", async (req, res) => {
@@ -95,8 +95,7 @@ app.post("/products", async (req, res) => {
 
 mongoose.set("strictQuery", false);
 
-
-const PORT = 3000
+const PORT = 3000;
 
 mongoose
   .connect(
